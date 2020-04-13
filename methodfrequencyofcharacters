@@ -1,0 +1,45 @@
+import java.util.Arrays;
+
+public class methodfrequencyofcharacters
+{
+    public static void methodfrequencyofcharacters(String str)
+    {
+        int a = str.length();
+        String strfinal = "";
+        String[] array1 = new String[str.length()];
+        array1 = str.split("");
+        System.out.println(Arrays.toString(array1));
+        int b = array1.length;
+        int count2 = 0;
+        for(int i = 0 ; i<b ; i++)
+        {
+            int count = 1;
+            for(int j = 0 ; j<b ; j++)
+            {
+                if(j>i&&array1[i].equals(array1[j]))
+                {
+                //System.out.println(i+ " " + j);
+                array1[j]="";
+                count ++;
+                    //System.out.println(Arrays.toString(array1));
+                }
+            }
+            if(array1[i]!="")
+            {
+            System.out.print(array1[i]+ count);
+            }
+
+            //System.out.println(i);
+            //i++;
+            //System.out.println(count);
+            //count2+=1;
+        }
+    }
+
+
+    public static void main(String[] args)
+    {
+        methodfrequencyofcharacters("asdfaasdfqweraaaaaqwerqwerqwerqwerasd");
+
+    }
+}
