@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class sortarray
 {
-    public static int[] reversethearray(int[] arr)
+    public static int[] reversesortthearray(int[] arr)
     {
         Arrays.sort(arr);
         int[] arr3 = new int[arr.length];
@@ -16,6 +16,11 @@ public class sortarray
 
     public static void main(String[] args) {
         int[] arr = {4,6,23,66,12,1,6};
-        System.out.println(Arrays.toString(reversethearray(arr)));
+        System.out.println(Arrays.toString(reversesortthearray(arr)));
+    }
+    public static int[] sortthearray(int[] arr)
+    {
+        Arrays.sort(arr);
+        return arr;
     }
 }
