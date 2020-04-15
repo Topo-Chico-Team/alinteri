@@ -1,4 +1,9 @@
-// ben bu methodu kendim yazdim ve fekat izahina muktedir degilim 
+// ben bu methodu kendim yazdim ve fekat izahina muktedir degilim yani aslinda usenmesem yapilabilir 
+// bi deneyeyim
+// once stringi , String arraye cevirdim 
+// sonra for icine for yazip onunda icine if yokarak j yi i den buyuk yaparak ki harfleri sadece kendinden sonra gelenlerle karsilastiralim
+// esit degerleri yani ayni harfleri bulunca count la saydirarak. ver j degerlerini bos stringe esitleyerek
+// bu saydirmayi ayni for icinde yani j li olan for un icinde baska bir if yazip onun icinde bos olmayan degerleri
 import java.util.Arrays;
 
 public class methodfrequencyofcharacters
