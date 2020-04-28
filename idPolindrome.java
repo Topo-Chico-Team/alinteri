@@ -1,21 +1,66 @@
-public class isPolindrome 
+import java.util.Scanner;
+
+public class Polindrome
 {
-    public static void isPalindrome(int num)
+
+
+    public static String  tersyuz(String b)
     {
-        //WRITE YOUR CODE HERE
-        String str = String.valueOf(num);
-        String str1 = "";
-        for(int i = 0 ; i<str.length() ; i++)
+        String c= "";
+        for(int i = 0 ; i<b.length(); i++)
         {
-            str1 += ""+str.charAt(str.length()-1-i);
+            c += "" + b.charAt(b.length()-1-i);
         }
-        if(str.equals(str1))
+        return (c);
+    }
+    public static void tersyuz(int a )
+    {
+        String b = String.valueOf(a);
+        String c= "";
+        for(int i = 0 ; i<b.length(); i++)
         {
-            System.out.println(true);
+            c += "" + b.charAt(b.length()-1-i);
         }
-        else
+        System.out.println(c);
+    }
+    public static void tersyuz(long a )
+    {
+        String b = String.valueOf(a);
+        String c= "";
+        for(int i = 0 ; i<b.length(); i++)
         {
-            System.out.println(false);
+            c += "" + b.charAt(b.length()-1-i);
         }
+        System.out.println(c);
+    }
+    public static boolean polindrome(String a, String b)
+    {
+        if(a.equals(tersyuz(b)))
+        {
+            return true;
+        }
+        else    return false;
+    }
+    public static boolean polindrome(int a, String b)
+    {
+        String c = String.valueOf(a);
+        if(c.equals(tersyuz(b)))
+        {
+            return true;
+        }
+        else    return false;
+    }
+
+
+    public static void main(String[] args)
+    {
+        tersyuz("aliverlika kmail");
+        tersyuz(123412341);
+        tersyuz(111);
+        System.out.println(polindrome("alig","gila"));
+        System.out.println(polindrome("ali","alik"));
+        System.out.println(polindrome(123,"123"));
+        System.out.println(polindrome(123,"321"));
+
     }
 }
