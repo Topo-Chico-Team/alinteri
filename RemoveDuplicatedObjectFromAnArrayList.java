@@ -37,6 +37,7 @@ public class RemoveDuplicatedObjectFromAnArrayList
         list2.add("kamil");list2.add("kamil2"); list2.add("kamil1");list2.add("kamil1");list2.add("kamil");
         System.out.println(RemoveDuplicatedObjectsFromAnArrayList(list));
         System.out.println(RemoveDuplicatedObjectsFromAnArrayList2(list2));
+        System.out.println("BU IS BOYLE OLMAYACAK");
 
     }
 }
