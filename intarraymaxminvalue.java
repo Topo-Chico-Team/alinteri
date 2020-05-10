@@ -1,6 +1,8 @@
-public static void main(String[] args)
+public class intarraymaxminvalue
+{
+    public static void main(String[] args)
     {
-        int[] arr = {4,5,8,11,-14,62,66,44,3,4};
+        int[] arr = {4, 5, 8, 11, -14, 62, 66, 44, 3, 4};
         int a = arr.length;
         int max = Integer.MIN_VALUE;
         int min = Integer.MAX_VALUE;
@@ -12,10 +14,8 @@ public static void main(String[] args)
         // eger ikinci kucukse max degeri ayni kalacak
         // siradaki deger elimizdeki max degerinde buyukse max degeri o olacak
         // degilse deger ayni kalmaya devam edecek
-        for (int i = 0 ; i<arr.length ; i++)
-        {
-            if(arr[i]>max)
-            {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > max) {
                 max = arr[i];
             }
         }
@@ -25,12 +25,11 @@ public static void main(String[] args)
         // min degerimiz artik o olacak
         // sonra sirayla bu min degeriyle yanindakin sinayacaz
         // o deger eger kucukse o min olacak degilse elimizdeki deger min olarak kalacak
-        for (int i = 0 ; i<a ; i++)
-        {
-            if(arr[i]<min)
-            {
+        for (int i = 0; i < a; i++) {
+            if (arr[i] < min) {
                 min = arr[i];
             }
         }
         System.out.println(min);
     }
+}
