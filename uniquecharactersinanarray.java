@@ -1,4 +1,6 @@
-public class uniquecharactersinanarray {
+public class uniquecharactersinanarray
+{
+
     public static String removeduplicate(String str) {
         String[] strr = str.split("");
         int a = strr.length;

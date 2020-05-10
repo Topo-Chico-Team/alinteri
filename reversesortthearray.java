@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class sortarray
+class sortarray
 {
     public static int[] reversesortthearray(int[] arr)
     {
