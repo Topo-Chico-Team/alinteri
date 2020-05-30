@@ -1,0 +1,63 @@
+import java.util.Arrays;
+
+public class SortingAnArray
+{
+    public static void main(String[] args) {
+        //  given array is arr
+        int[] arr = {1, 2, 3, 4, 5, 5, 6, 6, 90, 80, 36, 12, -13, -17};
+
+        //  sorted array arrSorted
+
+        int[] arrSorted = new int[arr.length];
+        int min = Integer.MIN_VALUE; // possible minimum value of an int
+        int max = Integer.MAX_VALUE; // possible maximum value of an int
+
+        //  first I will find the minimum and maximum value of the array otherwise running command takes until forever.
+
+        int minValueOfArray = 0;
+        for (int a = 0; a < arr.length; a++) {
+            if (arr[a] < max) {
+                max = arr[a];
+            }
+        }
+        minValueOfArray = max;
+
+        int maxValueOfArray = 0;
+        for (int a = 0; a < arr.length; a++) {
+            if (arr[a] > min) {
+                min = arr[a];
+            }
+        }
+        maxValueOfArray = min;
+
+        // then I will create a for loop from the min int to max int whenever values match it will print out
+
+        for (int a = 0; a < arr.length; a++)
+        {
+            int q =0 ;
+            for (int i = minValueOfArray; i <= maxValueOfArray; i++) // we can use Integer.MIN and MAX but it take too much time
+            {
+                //  this loop is going to search each element to check is there any matching value or not in the array
+
+                for (int ii = 0; ii < arr.length; ii++) 
+                {
+                    if (arr[ii] == i) 
+                    {
+
+                        arrSorted[q]=i;
+
+                        System.out.print(i + " ");
+                        i--; // this is the case of repeating number
+                        arr[ii] = Integer.MIN_VALUE; // if a number repeats i should assign it to something else.
+                        q++;
+                    }
+
+                }
+
+            }
+
+        }
+        System.out.println();
+        System.out.println(Arrays.toString(arrSorted));
+    }
+}
